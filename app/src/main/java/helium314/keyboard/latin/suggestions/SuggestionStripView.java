@@ -240,7 +240,7 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         mMainKeyboardView = inputView.findViewById(R.id.keyboard_view);
     }
 
-    private void updateKeys() {
+    public void updateKeys() {
         final SettingsValues currentSettingsValues = Settings.getInstance().getCurrent();
         final View toolbarVoiceKey = mToolbar.findViewWithTag(ToolbarKey.VOICE);
         if (toolbarVoiceKey != null)
@@ -261,21 +261,18 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         isInlineAutofillSuggestionsVisible = false;
     }
 
-    public void setRtl(final boolean isRtlLanguage) {
+    public void setToolbarDirection(final boolean isRtlLanguage) {
+        final int toolbarDirection = Settings.getInstance().getCurrent().mToolbarDirection;
         final int layoutDirection;
-        if (!Settings.getInstance().getCurrent().mVarToolbarDirection)
-            layoutDirection = View.LAYOUT_DIRECTION_LOCALE;
-        else{
-            layoutDirection = isRtlLanguage ? View.LAYOUT_DIRECTION_RTL : View.LAYOUT_DIRECTION_LTR;
-            mRtl = isRtlLanguage ? -1 : 1;
-        }
+        if (toolbarDirection == LAYOUT_DIRECTION_INHERIT) {
+            layoutDirection = isRtlLanguage ? LAYOUT_DIRECTION_RTL : LAYOUT_DIRECTION_LTR;
+        } else layoutDirection = toolbarDirection;
+        mRtl = (layoutDirection == LAYOUT_DIRECTION_RTL) ? -1 : 1;
         mStripVisibilityGroup.setLayoutDirection(layoutDirection);
     }
 
-    public void setSuggestions(final SuggestedWords suggestedWords, final boolean isRtlLanguage) {
+    public void setSuggestions(final SuggestedWords suggestedWords) {
         clear();
-        setRtl(isRtlLanguage);
-        updateKeys();
         mSuggestedWords = suggestedWords;
         mStartIndexOfMoreSuggestions = mLayoutHelper.layoutAndReturnStartIndexOfMoreSuggestions(
                 getContext(), mSuggestedWords, mSuggestionsStrip, this);

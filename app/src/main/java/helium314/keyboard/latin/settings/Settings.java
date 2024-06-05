@@ -20,6 +20,7 @@ import android.os.Build;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -95,7 +96,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     public static final String PREF_SHOW_LANGUAGE_SWITCH_KEY = "show_language_switch_key";
     public static final String PREF_LANGUAGE_SWITCH_KEY = "language_switch_key";
     public static final String PREF_SHOW_EMOJI_KEY = "show_emoji_key";
-    public static final String PREF_VARIABLE_TOOLBAR_DIRECTION = "var_toolbar_direction";
+    public static final String PREF_TOOLBAR_DIRECTION = "toolbar_direction";
     public static final String PREF_ADDITIONAL_SUBTYPES = "additional_subtypes";
     public static final String PREF_ENABLE_SPLIT_KEYBOARD = "split_keyboard";
     public static final String PREF_SPLIT_SPACER_SCALE = "split_spacer_scale";
@@ -312,6 +313,14 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
 
     public static boolean readAlwaysIncognitoMode(final SharedPreferences prefs) {
         return prefs.getBoolean(PREF_ALWAYS_INCOGNITO_MODE, false);
+    }
+
+    public static int readToolbarDirection(final SharedPreferences prefs) {
+        return switch (prefs.getString(PREF_TOOLBAR_DIRECTION, "subtype")) {
+            case "right" -> View.LAYOUT_DIRECTION_RTL;
+            case "left" -> View.LAYOUT_DIRECTION_LTR;
+            default -> View.LAYOUT_DIRECTION_INHERIT;
+        };
     }
 
     public void toggleAlwaysIncognitoMode() {

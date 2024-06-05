@@ -859,8 +859,10 @@ public class LatinIME extends InputMethodService implements
         mInputLogic.onSubtypeChanged(SubtypeLocaleUtils.getCombiningRulesExtraValue(subtype),
                 mSettings.getCurrent());
         loadKeyboard();
-        if (mSuggestionStripView != null)
-            mSuggestionStripView.setRtl(mRichImm.getCurrentSubtype().isRtlSubtype());
+        if (mSuggestionStripView != null && mSettings.getCurrent().mToolbarDirection == View.LAYOUT_DIRECTION_INHERIT) {
+            mSuggestionStripView.setToolbarDirection(mRichImm.getCurrentSubtype().isRtlSubtype());
+            mSuggestionStripView.updateKeys();
+        }
     }
 
     /** alias to onCurrentInputMethodSubtypeChanged with a better name, as it's also used for internal switching */
@@ -1023,6 +1025,11 @@ public class LatinIME extends InputMethodService implements
             // disruptive.
             // Space state must be updated before calling updateShiftState
             switcher.requestUpdatingShiftState(getCurrentAutoCapsState(), getCurrentRecapitalizeState());
+        }
+        // Update the toolbar keys
+        if (hasSuggestionStripView()) {
+            mSuggestionStripView.setToolbarDirection(mRichImm.getCurrentSubtype().isRtlSubtype());
+            mSuggestionStripView.updateKeys();
         }
         // This will set the punctuation suggestions if next word suggestion is off;
         // otherwise it will clear the suggestion strip.
@@ -1601,8 +1608,7 @@ public class LatinIME extends InputMethodService implements
                 || currentSettingsValues.isApplicationSpecifiedCompletionsOn()
                 // We should clear the contextual strip if there is no suggestion from dictionaries.
                 || noSuggestionsFromDictionaries) {
-            mSuggestionStripView.setSuggestions(suggestedWords,
-                    mRichImm.getCurrentSubtype().isRtlSubtype());
+            mSuggestionStripView.setSuggestions(suggestedWords);
             // Auto hide the toolbar if dictionary suggestions are available
             if (currentSettingsValues.mAutoHideToolbar && !noSuggestionsFromDictionaries) {
                 mSuggestionStripView.setToolbarVisibility(false);
