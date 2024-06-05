@@ -231,8 +231,6 @@
     <string name="theme_name_chocolate" tools:keep="@string/theme_name_chocolate">Шоколад</string>
     <string name="theme_name_sand" tools:keep="@string/theme_name_sand">Пісок</string>
     <string name="theme_name_blue_gray" tools:keep="@string/theme_name_blue_gray">Сіро-блакитний</string>
-    <string name="var_toolbar_direction_summary">Зворотній напрямок, якщо вибрано підтип клавіатури з листом праворуч наліво</string>
-    <string name="var_toolbar_direction">Змінний напрямок панелі інструментів</string>
     <string name="prefs_long_press_symbol_for_numpad">Тривале натискання символів для цифрової клавіатури</string>
     <string name="prefs_bottom_padding_scale">Висота нижнього відступу</string>
     <string name="prefs_always_show_suggestions">Завжди показувати пропозиції</string>

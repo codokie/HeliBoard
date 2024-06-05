@@ -317,8 +317,6 @@
     <string name="settings_screen_appearance">Apariencia</string>
     <string name="hidden_features_text">almacenamiento protegido del dispositivo</string>
     <string name="hidden_features_summary">Mostrar características que pueden pasar desapercibidas</string>
-    <string name="var_toolbar_direction">Dirección variable de la barra de herramientas</string>
-    <string name="var_toolbar_direction_summary">Invertir la dirección cuando se selecciona un subtipo de teclado de derecha a izquierda</string>
     <string name="subtype_probhat_bn_BD"><xliff:g id="LANGUAGE_NAME" example="Bengali">%s</xliff:g> (Probhat)</string>
     <string name="subtype_generic_sebeolsik_390"><xliff:g id="LANGUAGE_NAME" example="Korean">%s</xliff:g> (Sebeolsik 390)</string>
     <string name="subtype_generic_sebeolsik_final"><xliff:g id="LANGUAGE_NAME" example="Korean">%s</xliff:g> (Sebeolsik Final)</string>

@@ -278,8 +278,6 @@
     <string name="select_color_gesture">Zadávání gesty</string>
     <string name="about_github_link">Zobrazit na GitHubu</string>
     <string name="save_log">Uložit protokol</string>
-    <string name="var_toolbar_direction_summary">Obrácení směru při výběru podtypu klávesnice zprava doleva</string>
-    <string name="var_toolbar_direction">Proměnlivý směr panelu nástrojů</string>
     <string name="button_backup">Záloha</string>
     <string name="button_restore">Obnovení</string>
     <string name="secondary_locale">Vícejazyčné psaní</string>

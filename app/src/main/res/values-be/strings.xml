@@ -265,7 +265,6 @@
     <string name="popup_keys_number" tools:keep="@string/popup_keys_number">Шэраг з лічбамі</string>
     <string name="popup_order">Выберыце парадак ўсплывальных клавіш</string>
     <string name="hint_source">Выберыце крыніцу падказкі</string>
-    <string name="var_toolbar_direction">Пераменны напрамак панэлі інструментаў</string>
     <string name="theme_name_chocolate" tools:keep="@string/theme_name_chocolate">Шакалад</string>
     <string name="theme_name_cloudy" tools:keep="@string/theme_name_cloudy">Воблачна</string>
     <string name="prefs_long_press_symbol_for_numpad">Доўгі націск клавішы сімвалаў для лічбавай клавіятуры</string>
@@ -338,7 +337,6 @@
     <string name="no_dictionary_message">Без слоўніка вы будзеце атрымліваць прапановы толькі для ўведзенага раней тэксту.&lt;br&gt;
 \nВы можаце загрузіць слоўнікі %1$s або праверыць, ці можна загрузіць слоўнік для «%2$s» напрамую %3$s.</string>
     <string name="hidden_features_text">сховішча, абароненае прыладай</string>
-    <string name="var_toolbar_direction_summary">Зваротны напрамак, калі выбраны падтып клавіятуры з пісьмом справа налева</string>
     <string name="add_new_dictionary_title">Дадаць слоўнік з файла</string>
     <string name="user_dict_settings_add_weight_value">Вага:</string>
     <string name="label_search_key">Пошук</string>

@@ -338,8 +338,6 @@
     <string name="show_horizontal_space_swipe">Xesto de desprazamento horizontal na barra</string>
     <string name="action_none">Ningún</string>
     <string name="space_swipe_move_cursor_entry">Mover Cursor</string>
-    <string name="var_toolbar_direction">Dirección variable barra ferramentas</string>
-    <string name="var_toolbar_direction_summary">Dirección inversa cando está seleccionado o tipo de teclado de dereita a esquerda</string>
     <string name="subtype_probhat_bn_BD"><xliff:g id="LANGUAGE_NAME" example="Bengali">%s</xliff:g> (Probhat)</string>
     <string name="subtype_generic_student"><xliff:g id="LANGUAGE_NAME" example="Russian">%s</xliff:g> (Estudante)</string>
     <string name="prefs_long_press_symbol_for_numpad">Tecla con pulsación longa para teclado numérico</string>

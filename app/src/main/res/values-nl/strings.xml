@@ -335,8 +335,6 @@
     <string name="select_color_gesture">Gebaren-invoer</string>
     <string name="action_none">Geen</string>
     <string name="space_swipe_move_cursor_entry">Cursor verplaatsen</string>
-    <string name="var_toolbar_direction">Variabele werkbalkrichting</string>
-    <string name="var_toolbar_direction_summary">Omgekeerde richting wanneer een rechts-naar-links toetsenbord-subtype is geselecteerd</string>
     <string name="show_vertical_space_swipe">Verticaal veeggebaar over spatiebalk</string>
     <string name="load_gesture_library_message">Een bibliotheek is nodig voor \'%s\'. Incompatibele bibliotheken kunnen crashen bij het typen van gebaren.
 \n

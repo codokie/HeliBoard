@@ -195,7 +195,6 @@
     <string name="load_gesture_library_button_delete">Excluir biblioteca</string>
     <string name="localized_number_row_summary">Preferir números localizados em vez de latim</string>
     <string name="show_popup_keys_title">Mostrar mais letras com diacríticos no popup</string>
-    <string name="var_toolbar_direction">Direção da barra de ferramentas variável</string>
     <string name="split_spacer_scale">Distância da separação</string>
     <string name="language_switch_key_switch_both">Mudar ambos</string>
     <string name="add_to_personal_dictionary">Adicionar palavras ao dicionário pessoal</string>
@@ -338,7 +337,6 @@
     <string name="label_next_key">Próximo</string>
     <string name="show_vertical_space_swipe">Gesto de deslizar vertical na barra de espaço</string>
     <string name="action_none">Nenhum</string>
-    <string name="var_toolbar_direction_summary">Inverter a direção quando um teclado do subtipo direita-para-esquerda é selecionado</string>
     <string name="prefs_long_press_symbol_for_numpad">Toque longo na tecla de símbolos para abrir o numpad</string>
     <string name="cut" tools:keep="@string/cut">Cortar</string>
     <string name="subtype_generic_student"><xliff:g id="LANGUAGE_NAME" example="Russian">%s</xliff:g> (Estudante)</string>

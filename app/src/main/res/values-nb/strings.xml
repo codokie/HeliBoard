@@ -157,8 +157,6 @@
     <string name="label_search_key">"Søk"</string>
     <string name="label_pause_key">"Pause"</string>
     <string name="label_wait_key">"Vent"</string>
-    <string name="var_toolbar_direction_summary">Reverser retning når en høyre- til-venstre tastaturundertype er valgt</string>
-    <string name="var_toolbar_direction">Variabel verktøylinjeretning</string>
     <string name="language_switch_key_switch_both">Bytt begge</string>
     <string name="settings_category_clipboard_history">Utklippstavlehistorikk</string>
     <string name="split_spacer_scale">Delingsmellomrom</string>
